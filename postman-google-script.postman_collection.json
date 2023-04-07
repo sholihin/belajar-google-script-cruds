@@ -1,0 +1,240 @@
+{
+	"variables": [],
+	"info": {
+		"name": "postman-google-script",
+		"_postman_id": "961fb349-24bb-6f97-20be-da9bda081f4f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find All",
+			"request": {
+				"url": {
+					"raw": "{{url_api}}?method=all",
+					"host": [
+						"{{url_api}}"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "all",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"url": {
+					"raw": "{{url_api}}?nama=sholihin&schema=ap2t&jenis_object=package&action=update&keterangan=sholihin&method=insert",
+					"host": [
+						"{{url_api}}"
+					],
+					"query": [
+						{
+							"key": "nama",
+							"value": "sholihin",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "schema",
+							"value": "ap2t",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "jenis_object",
+							"value": "package",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "action",
+							"value": "update",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "keterangan",
+							"value": "sholihin",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "method",
+							"value": "insert",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": {
+					"raw": "{{url_api}}?id=1001&method=delete",
+					"host": [
+						"{{url_api}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1001",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "method",
+							"value": "delete",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "no",
+						"value": "99",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "nama",
+						"value": "exec_trans_ts",
+						"description": ""
+					},
+					{
+						"key": "schema",
+						"value": "bill52",
+						"description": ""
+					},
+					{
+						"key": "jenis_object",
+						"value": "table",
+						"description": ""
+					},
+					{
+						"key": "action",
+						"value": "create",
+						"description": ""
+					},
+					{
+						"key": "keterangan",
+						"value": "test",
+						"description": ""
+					},
+					{
+						"key": "id",
+						"value": "1001",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": "https://script.google.com/macros/s/AKfycbwzTMczJ6lDahgroXuqqqWnVgrxjcKhbVecDPDlYGWBBRgV8lwT63OgPhOhLMOuxl5zJw/exec?id=1001&method=delete"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"url": {
+					"raw": "{{url_api}}?id=1024&nama=mohamad sholihin&jabatan=senior enginer&salary=15000000&method=update",
+					"host": [
+						"{{url_api}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1024",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "nama",
+							"value": "mohamad sholihin",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "jabatan",
+							"value": "senior enginer",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "salary",
+							"value": "15000000",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "method",
+							"value": "update",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "https://script.google.com/macros/s/AKfycbwzTMczJ6lDahgroXuqqqWnVgrxjcKhbVecDPDlYGWBBRgV8lwT63OgPhOhLMOuxl5zJw/exec?id=1001&method=update"
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Name",
+			"request": {
+				"url": {
+					"raw": "{{url_api}}?nama=a&method=find",
+					"host": [
+						"{{url_api}}"
+					],
+					"query": [
+						{
+							"key": "nama",
+							"value": "a",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "method",
+							"value": "find",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
